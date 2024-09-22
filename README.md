@@ -1,43 +1,14 @@
-# Template for Forge 1.8.9 + Mixins
+## NoHitDelay Mod for Minecraft 1.8.9
 
-**Note:** I have only tested this with IntelliJ, but it should work with Eclipse just fine.
+The NoHitDelay mod is designed to enhance the gameplay experience in Minecraft 1.8.9 by eliminating the hit delay mechanic that is present in the game's combat system. In vanilla Minecraft, when players attack entities, there is a brief cooldown period before they can land another hit. This delay can hinder fast-paced combat and make battles feel less fluid.
 
-## Introduction
+### Objectives:
+**Enhance Combat Fluidity:** The primary goal of the NoHitDelay mod is to allow players to attack continuously without the restrictions imposed by the cooldown mechanic.
 
-This repository includes a plug-and-play project template for 1.8.9 Forge Development with Mixins.
+**Improve Gameplay Dynamics:** By removing the hit delay, players can engage in more dynamic and responsive combat scenarios, making battles more exciting and competitive.
 
-It contains an example mod with an example mixin (`MixinMinecraft.java`).
+**Compatibility:** The mod will be developed to ensure compatibility with existing mods and Minecraft servers, providing a seamless experience for users.
 
-## Setup
+**Technical Approach:** The mod will utilize Minecraft Forge and Mixin technology to modify the game's attack mechanics. By intercepting the attack method and adjusting the cooldown values, we will effectively create a more responsive combat system.
 
-1. Download or clone this repository
-2. Open it as a Project
-3. The gradle setup should be running automatically, if not, use `./gradlew`
-4. Run the gradle task `gradle setupDecompWorkspace` (if you are getting the error "Heap Memory too low", increase the memory by adding `-Xmx4G` or `-Xmx8G` to the gradle task, depending on how much RAM you have; Right-Click the Gradle Task -> Modify Run Configuration... -> Modify Options -> Add VM Options)
-5. If the setup is done, try to run the client with the example mod (use my prebuilt task `gradle buildCopyToRunModsAndRun` if you want -> combines building, copying to the run mods folder and running)
-6. Nice! You just setup your working environment for 1.8.9 Forge Development with Mixins! If everything worked correctly you should find the following three things in your console:
-   1. `[ExampleMod] Injecting with IFMLLoadingPlugin.`
-   2. `Mixin worked!`
-   3. `DIRT BLOCK >> tile.dirt`
-
-## Post-Setup
-
-Do the TODOs that are marked in:
-
-- `build.gradle`
-- `src/main/java/com/example/examplemod/mixins/MixinLoader.java`
-
-Change the data in the `resources/mcmod.info` and rename and change the data of `resources/mixins.examplemod.json`
-
-## Need help?
-
-If you followed these steps but something went wrong, you can open an issue or contact me (see contact options on my profile), I am happy to help!
-
-## License
-
-You can read all the applying licenses in the file `LICENSE.md`
-
-## Support
-
-If you like this project, feel free to support me!<br><br>
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/manuthebyte)
+This project is aimed at players who seek a more engaging combat experience in Minecraft and will be developed with an emphasis on stability and performance.
